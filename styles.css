@@ -1,5 +1,44 @@
-body {
+body, html {
+    height: 100%;
     margin: 0;
-    background: pink;
+    padding:0;
+    background: black;
+}
+
+.bg-image {
+    background-image: url("imgs/edna_bg.jpg");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
     text-align: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#playlist {
+    list-style: none;
+}
+#playlist li a {
+    color:black;
+    text-decoration: none;
+    object-fit: cover;
+}
+#playlist .current-song a {
+    color:blue;
 }

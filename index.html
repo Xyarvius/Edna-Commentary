@@ -4,11 +4,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script type="text/javascript" src="audioPlayer.js"></script>
     </head>
     <body>
-        <h1>Edna Commentary</h1>
-        <p>Lorem ipsum ...</p>
-        <p>Lorem ipsum ...</p>
-        <p>Lorem ipsum ...</p>
+        <div class="bg-image"></div>
+        <div class="content">
+            <audio src="" controls id="audioPlayer"></audio>
+            <ul id="playlist">
+                <li class="current-song"><a href="commentary/1001.ogg"><img src="imgs/buttons/btn_1001_gummizelle.png" alt="Gummizelle"></a></li>
+                <li><a href="commentary/1002.ogg"><img src="imgs/buttons/btn_1002_ventilator.png" alt="Ventilator"></a></li>
+                <li><a href="commentary/4001.ogg"><img src="imgs/buttons/btn_4001_keller.png" alt="Keller"></a></li>
+            </ul>
+            <script>
+                audioPlayer();
+            </script>
+        </div>
     </body>
 </html>
