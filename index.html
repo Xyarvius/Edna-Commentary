@@ -5,17 +5,22 @@
         <title>Document</title>
         <link rel="stylesheet" href="styles.css">
         <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-        <script type="text/javascript" src="audioPlayer.js"></script>
     </head>
     <body>
         <div class="bg-image"></div>
         <div class="content">
+            <img width="388" height="360" id="poki"/>
             <audio src="" controls id="audioPlayer"></audio>
-            <ul id="playlist">
-                <li class="current-song"><a href="commentary/1001.ogg"><img src="imgs/buttons/btn_1001_gummizelle.png" alt="Gummizelle"></a></li>
-                <li><a href="commentary/1002.ogg"><img src="imgs/buttons/btn_1002_ventilator.png" alt="Ventilator"></a></li>
-                <li><a href="commentary/4001.ogg"><img src="imgs/buttons/btn_4001_keller.png" alt="Keller"></a></li>
-            </ul>
+            <nav>
+                <ul id="playlist">
+                    <li class="current-song"><a href="commentary/1001.ogg"><img id="1001" src="imgs/buttons/btn_1001_gummizelle.png" onClick="reply_click(this.id)"></a></li>
+                    <li><a href="commentary/1002.ogg"><img id="1002" src="imgs/buttons/btn_1002_ventilator.png" onClick="reply_click(this.id)"></a></li>
+                    <li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png" onClick="reply_click(this.id)"></a></li>
+                </ul>
+            </nav>
+            <script type="text/javascript" src="scripts/audioPlayer.js"></script>
+            <script type="text/javascript" src="scripts/pokiGif.js"></script>
+            <script type="text/javascript" src="scripts/greyOut.js"></script>
             <script>
                 audioPlayer();
             </script>
