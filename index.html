@@ -1,39 +1,130 @@
-<html lang ="en">
-    <head>
-        <meta chartset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    </head>
-    <body>
-        <div class="bg-image"></div>
-        <div class="content">
-            <div class="grid-container">
-                <div class="box1">
-                    <img id="poki"/>
-                    <audio src="" controls id="audioPlayer"></audio>
+<html lang="en">
+
+<head>
+    <meta chartset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <div class="content">
+        <div class="grid-container">
+            <div class="left">
+                <div class="poki-container">
+                    <div><img id="poki" /></div>
+                    <div><audio src="" controls id="audioPlayer"></audio></div>
                 </div>
-                <div class="box2">
-                    <img src="imgs/title.png" id="title">
-                </div>
-                <div class="list">
-                    <nav>
-                        <ul id="playlist">
-                            <li class="current-song"><a href="commentary/1001.ogg"><img id="1001" src="imgs/buttons/btn_1001_gummizelle.png" class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a></li>
-                            <li><a href="commentary/1002.ogg"><img id="1002" src="imgs/buttons/btn_1002_ventilator.png" class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a></li>
-                            <li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png" class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a></li>
-                        </ul>
-                    </nav>
-                    <script type="text/javascript" src="scripts/audioPlayer.js"></script>
-                    <script type="text/javascript" src="scripts/pokiGif.js"></script>
-                    <script type="text/javascript" src="scripts/greyOut.js"></script>
-                    <script>
-                        audioPlayer();
-                        /*localStorage.clear();*/
-                    </script>
-                </div>  
+            </div>
+            <div class="top">
+                <img src="imgs/title.png" id="title">
+            </div>
+            <div class="right">
+            </div>
+            <div class="bottom">
+                <nav>
+                    <ul id="playlist">
+                        <li class="current-song"><a href="commentary/1001.ogg"><img id="1001"
+                                    src="imgs/buttons/btn_1001_gummizelle.png" class="sceneButton"
+                                    onClick="reply_click(this.id)" onload="load_grey(this.id)"></a></li>
+                        <li><a href="commentary/1002.ogg"><img id="1002" src="imgs/buttons/btn_1002_ventilator.png"
+                                    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                        </li>
+                        <li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+                                    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                        </li>
+                        <li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+                                    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                        </li>
+                        <li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+                                    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                        </li>
+                        <li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+                                    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                        </li>
+                        <li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+                                    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                        </li>
+                        <li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+                                    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                        </li>
+                        <li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+                            class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                </li>
+                <li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+                    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+        </li>
+        <li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+            class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+</li>
+<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+</li>
+<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+</li>
+<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+</li>
+<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+</li>
+<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+</li>
+<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+</li>
+<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+</li>
+<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+</li>
+<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+</li>
+<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+</li>
+<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+</li>
+<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+</li>
+<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+</li>
+<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+</li>
+<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+</li>
+<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+</li>
+<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+</li>
+<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+</li>
+<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
+    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+</li>
+
+                    </ul>
+                </nav>
             </div>
         </div>
-    </body>
+    </div>
+    <script type="text/javascript" src="scripts/audioPlayer.js"></script>
+    <script type="text/javascript" src="scripts/pokiGif.js"></script>
+    <script type="text/javascript" src="scripts/greyOut.js"></script>
+</body>
+
 </html>

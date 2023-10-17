@@ -1,12 +1,11 @@
-body, html {
-    margin:-5;
-    padding:-5;
+body {
     background: black;
-    overflow:hidden; 
-    overflow-y:hidden; 
 }
 
-.bg-image {
+.background-image {
+    position: fixed;
+    left: 0;
+    z-index: 1;
     background-image: url("imgs/edna_bg.jpg");
     filter: blur(8px);
     -webkit-filter: blur(8px);
@@ -19,14 +18,46 @@ body, html {
 }
 
 .content {
-    /*background-color: rgba(0,0,0, 0.4);*/
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    row-gap: 20px;
+    grid-template-areas:
+        'left top right'
+        'bottom bottom bottom';
+}
+
+.top {
+    grid-area: top;
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.poki-container {
+    grid-area: left;
+    text-align: center;
+    max-width: 350px;
+    margin-left: 20px;
+}
+
+.right {
+    grid-area: right;
+}
+
+.bottom {
+    grid-area: bottom;
+    text-align: center;
+    margin-left: -50px;
 }
 
 img {
@@ -34,8 +65,22 @@ img {
     max-height: auto;
 }
 
+.greyOut {
+    opacity: 0.3;
+}
+
+#title {
+    max-height: 400px;
+    margin-left: -20px;
+}
+
+#audioPlayer {
+    margin-left: -8px;
+}
+
 #playlist {
     list-style: none;
+
 }
 
 #playlist li a {
@@ -43,60 +88,49 @@ img {
 }
 
 #playlist .current-song a {
-    color:blue;
-}
-
-nav ul{
-    max-height:600px;
-    overflow:hidden; 
-    overflow-y:scroll;
+    /*background-color: rgba(0, 0, 0, 0.4);*/
 }
 
 .sceneButton {
     max-width: 100%;
-    max-height: 100%;
+}
+
+nav ul {
+    text-align: center;
+    margin: auto;
+    max-width: 56%;
+    max-height: 845px;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius: 15px;
+    background: #290f332c;
+    border: 3px solid #000000;
+}
+
+ul {
+    padding-left: 0;
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
+    width: 15px;
+    position: absolute;
+    left: 0;
 }
 
-.greyOut {
-    opacity: 0.3;
+::-webkit-scrollbar-track {
+    background: #55029921;
+    border-radius: 35px;
 }
 
-
-.box1 { 
-    grid-area: box1;
+::-webkit-scrollbar-thumb {
+    background: #7F56BB;
+    border-radius: 35px;
 }
 
-.box2 { 
-    grid-area: box2; 
+::-webkit-scrollbar-thumb:hover {
+    background: #603f92;
 }
 
-.list { 
-    grid-area: list; 
-}
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'box1 box2'
-    'list list';
-  gap: 10px;
-  padding: 10px;
-}
-
-.grid-container > div {
-  text-align: center;
-  padding: 20px 0;
-}
-
-#poki{
-    width:400
-}
-
-#title{
-    width:1000
-}
+audio{
+    opacity: 60%;
+  }

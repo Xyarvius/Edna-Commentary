@@ -11,3 +11,5 @@ function load_grey(clicked_id)
         $('#' + clicked_id).addClass('greyOut');
     }
 }
+
+ /*localStorage.clear();*/
