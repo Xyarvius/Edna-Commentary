@@ -1,7 +1,6 @@
 function reply_click(clicked_id)
 {
-    $('#' + clicked_id).addClass('greyOut');
-    localStorage.setItem(clicked_id, 'true');
+    localStorage.setItem('last_clicked', clicked_id);
 }
 
 function load_grey(clicked_id)
@@ -12,4 +11,4 @@ function load_grey(clicked_id)
     }
 }
 
- /*localStorage.clear();*/
+ localStorage.clear();

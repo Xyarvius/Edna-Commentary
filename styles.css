@@ -57,7 +57,6 @@ body {
 .bottom {
     grid-area: bottom;
     text-align: center;
-    margin-left: -50px;
 }
 
 img {
@@ -87,8 +86,9 @@ img {
     object-fit: cover;
 }
 
-#playlist .current-song a {
-    /*background-color: rgba(0, 0, 0, 0.4);*/
+#playlist .current-song a img {
+    background-color: #321c53;
+    border-radius: 10px;
 }
 
 .sceneButton {
@@ -98,13 +98,17 @@ img {
 nav ul {
     text-align: center;
     margin: auto;
-    max-width: 56%;
-    max-height: 845px;
+    max-width: 65%;
+    max-height: 700px;
     overflow: hidden;
     overflow-y: scroll;
     border-radius: 15px;
     background: #290f332c;
     border: 3px solid #000000;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 ul {
@@ -131,6 +135,6 @@ ul {
     background: #603f92;
 }
 
-audio{
+audio {
     opacity: 60%;
-  }
+}
