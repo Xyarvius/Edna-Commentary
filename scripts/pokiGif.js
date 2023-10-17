@@ -1,7 +1,7 @@
 number = 0;
 const animations = [
     'imgs/poki/poki_1.png',
-    'imgs/poki/poki_test.gif'
+    'imgs/poki/Poki-talk.gif'
 ];
 
 const audio = document.getElementById('audioPlayer');
