@@ -11,4 +11,4 @@ function load_grey(clicked_id)
     }
 }
 
- localStorage.clear();
+ /*localStorage.clear();*/

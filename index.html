@@ -25,50 +25,468 @@
             <div class="right">
             </div>
             <div class="bottom">
-                <nav>
-                    <ul id="playlist">
-                        <li><a href="commentary/1001.ogg"><img id="1001"
-                                    src="imgs/buttons/btn_1001_gummizelle.png" class="sceneButton"
-                                    onClick="reply_click(this.id)" onload="load_grey(this.id)"></a></li>
-                        <li><a href="commentary/1002.ogg"><img id="1002" src="imgs/buttons/btn_1002_ventilator.png"
-                                    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
-                        </li>
-                        <li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
-                                    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
-                        </li>
-                        <li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
-                            class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
-                </li>
-                <li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
-                    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
-        </li>
-        <li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
-            class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
-</li>
-<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
-    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
-</li>
-<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
-    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
-</li>
-<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
-    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
-</li>
-<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
-    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
-</li>
-<li><a href="commentary/4001.ogg"><img id="4001" src="imgs/buttons/btn_4001_keller.png"
-    class="sceneButton" onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
-</li>
+                <div class="w3-bar w3-black">
+                    <button class="w3-bar-item w3-button" onclick="openAct('act_1')">Kapitel 1.1</button>
+                    <button class="w3-bar-item w3-button" onclick="openAct('act_2')">Kapitel 1.2</button>
+                    <button class="w3-bar-item w3-button" onclick="openAct('act_3')">Kapitel 1.3</button>
+                    <button class="w3-bar-item w3-button" onclick="openAct('act_4')">Kapitel 2</button>
+                    <button class="w3-bar-item w3-button" onclick="openAct('act_5')">Kapitel 3</button>
+                </div>
 
-                    </ul>
-                </nav>
+                <div id="act_1" class="act">
+                    <nav>
+                        <ul id="playlist">
+                            (Die) Flucht - aus der Zelle
+                            <li><a href="commentary/1001.ogg"><img id="1001" src="imgs/buttons/btn_1001_zelle.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1002.ogg"><img id="1002" src="imgs/buttons/btn_1002_ventilator.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/4001.ogg"><img id="4001"
+                                        src="imgs/buttons/btn_4001_kellerEdnaErinnerung.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/4003.ogg"><img id="4003"
+                                        src="imgs/buttons/btn_4003_hintertuerErinnerung.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/4004.ogg"><img id="4004"
+                                        src="imgs/buttons/btn_4004_verandaErinnerung.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/4005.ogg"><img id="4005"
+                                        src="imgs/buttons/btn_4005_zeitungErinnerung.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1003.ogg"><img id="1003"
+                                        src="imgs/buttons/btn_1003_schachtRechts.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1004.ogg"><img id="1004"
+                                        src="imgs/buttons/btn_1004_schachtLinks.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1005.ogg"><img id="1005"
+                                        src="imgs/buttons/btn_1005_schachtLuftauslass.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1006.ogg"><img id="1006" src="imgs/buttons/btn_1006_buero.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1007.ogg"><img id="1007" src="imgs/buttons/btn_1007_flurBuero.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1008.ogg"><img id="1008"
+                                        src="imgs/buttons/btn_1008_abstellkammer.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1009.ogg"><img id="1009"
+                                        src="imgs/buttons/btn_1009_flurEdnaZella.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1011.ogg"><img id="1011" src="imgs/buttons/btn_1011_dachHinten.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1012.ogg"><img id="1012" src="imgs/buttons/btn_1012_dachVorne.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div id="act_2" class="act" style="display:none">
+                    <nav>
+                        <ul id="playlist">
+                            (Die) Flucht - aus der Anstalt
+                            <li><a href="commentary/1013.ogg"><img id="1013"
+                                        src="imgs/buttons/btn_1013_flurUeberwachung.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1014.ogg"><img id="1014" src="imgs/buttons/btn_1014_flurWC.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1015.ogg"><img id="1015" src="imgs/buttons/btn_1015_pausenraum.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1016.ogg"><img id="1016" src="imgs/buttons/btn_1016_wc1.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1017.ogg"><img id="1017"
+                                        src="imgs/buttons/btn_1017_ueberwachungsraum.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1018.ogg"><img id="1018" src="imgs/buttons/btn_1018_flurGross.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1020.ogg"><img id="1020" src="imgs/buttons/btn_1020_schockraum.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1027.ogg"><img id="1027" src="imgs/buttons/btn_1027_flurGitter.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1038.ogg"><img id="1038" src="imgs/buttons/btn_1038_lobby.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1039.ogg"><img id="1039"
+                                        src="imgs/buttons/btn_1039_besuchereingang.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1028.ogg"><img id="1028"
+                                        src="imgs/buttons/btn_1028_aufenthaltsraum.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1037.ogg"><img id="1037" src="imgs/buttons/btn_1037_residenz.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1030.ogg"><img id="1030" src="imgs/buttons/btn_1030_telefon.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1029.ogg"><img id="1029"
+                                        src="imgs/buttons/btn_1029_fernsehzimmer.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1031.ogg"><img id="1031"
+                                        src="imgs/buttons/btn_1031_flurBeschaeftigung.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1033.ogg"><img id="1033" src="imgs/buttons/btn_1033_wc2.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1032.ogg"><img id="1032" src="imgs/buttons/btn_1032_waesche1.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1034.ogg"><img id="1034"
+                                        src="imgs/buttons/btn_1034_beschaeftigungstherapie.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1035.ogg"><img id="1035" src="imgs/buttons/btn_1035_bar.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1036.ogg"><img id="1036" src="imgs/buttons/btn_1036_lounge.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1050.ogg"><img id="1050" src="imgs/buttons/btn_1050_lift.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1021.ogg"><img id="1021" src="imgs/buttons/btn_1021_wasche2.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1022.ogg"><img id="1022" src="imgs/buttons/btn_1022_wc3.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1023.ogg"><img id="1023" src="imgs/buttons/btn_1023_verhoerraum.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1026.ogg"><img id="1026"
+                                        src="imgs/buttons/btn_1026_schluesselmeister.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1024.ogg"><img id="1024" src="imgs/buttons/btn_1024_schlafsaal.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1025.ogg"><img id="1025" src="imgs/buttons/btn_1025_zwillinge.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1046.ogg"><img id="1046" src="imgs/buttons/btn_1046_waschraum.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1045.ogg"><img id="1045" src="imgs/buttons/btn_1045_kellergang.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1049.ogg"><img id="1049" src="imgs/buttons/btn_1049_archiv.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1047.ogg"><img id="1047"
+                                        src="imgs/buttons/btn_1047_heizraumOben.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1048.ogg"><img id="1048"
+                                        src="imgs/buttons/btn_1048_heizraumUnten.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1042.ogg"><img id="1042" src="imgs/buttons/btn_1042_flurKeller.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1041.ogg"><img id="1041" src="imgs/buttons/btn_1041_kueche.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1040.ogg"><img id="1040" src="imgs/buttons/btn_1040_speisesaal.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1043.ogg"><img id="1043"
+                                        src="imgs/buttons/btn_1043_flurGruppentherapie.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1044.ogg"><img id="1044"
+                                        src="imgs/buttons/btn_1044_gruppentherapie.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1019.ogg"><img id="1019" src="imgs/buttons/btn_1019_schrein.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/5001.ogg"><img id="5001"
+                                        src="imgs/buttons/btn_5001_schulzimmerErinnerung.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/5003.ogg"><img id="5003"
+                                        src="imgs/buttons/btn_5003_kleiderschrankErinnerung.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div id="act_3" class="act" style="display:none">
+                    <nav>
+                        <ul id="playlist">
+                            (Die) Flucht - vom Anwesen
+                            <li><a href="commentary/1051.ogg"><img id="1051" src="imgs/buttons/btn_1051_hinterhof.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1052.ogg"><img id="1052" src="imgs/buttons/btn_1052_garage.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1053.ogg"><img id="1053" src="imgs/buttons/btn_1053_parkplatz.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1054.ogg"><img id="1054" src="imgs/buttons/btn_1054_vorplatz.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1057.ogg"><img id="1057" src="imgs/buttons/btn_1057_eingangstor.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1055.ogg"><img id="1055" src="imgs/buttons/btn_1055_zenGarten.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1056.ogg"><img id="1056" src="imgs/buttons/btn_1056_mauer.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1061.ogg"><img id="1061" src="imgs/buttons/btn_1061_esstisch.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1058.ogg"><img id="1058"
+                                        src="imgs/buttons/btn_1058_wachturmUnten.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/1062.ogg"><img id="1062"
+                                        src="imgs/buttons/btn_1062_wachturmOben.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div id="act_4" class="act" style="display:none">
+                    <nav>
+                        <ul id="playlist">
+                            (Die) Freiheit
+                            <li><a href="commentary/2001.ogg"><img id="2001"
+                                        src="imgs/buttons/btn_2001_unfallstelle.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/2002.ogg"><img id="2002" src="imgs/buttons/btn_2002_auto.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/2003.ogg"><img id="2003"
+                                        src="imgs/buttons/btn_2003_strasseAnstalt.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/2004.ogg"><img id="2004"
+                                        src="imgs/buttons/btn_2004_aussichtsplattform.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/2009.ogg"><img id="2009" src="imgs/buttons/btn_2009_fluss.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/2005.ogg"><img id="2005"
+                                        src="imgs/buttons/btn_2005_strasseKirche.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/2006.ogg"><img id="2006" src="imgs/buttons/btn_2006_bruecke.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/2007.ogg"><img id="2007"
+                                        src="imgs/buttons/btn_2007_rettungswagenHinten.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/2008.ogg"><img id="2008"
+                                        src="imgs/buttons/btn_2008_rettungswagenVorne.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/2010.ogg"><img id="2010" src="imgs/buttons/btn_2010_torFriedhof.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/2011.ogg"><img id="2011" src="imgs/buttons/btn_2011_friedhof.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/2012.ogg"><img id="2012" src="imgs/buttons/btn_2012_kirche.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/2013.ogg"><img id="2013"
+                                        src="imgs/buttons/btn_2013_kapelleVorne.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/2014.ogg"><img id="2014"
+                                        src="imgs/buttons/btn_2014_pastorenzimmer.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/2016.ogg"><img id="2016"
+                                        src="imgs/buttons/btn_2016_kapelleHinten.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/2017.ogg"><img id="2017" src="imgs/buttons/btn_2017_orgel.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/2018.ogg"><img id="2018" src="imgs/buttons/btn_2018_empore.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/2019.ogg"><img id="2019" src="imgs/buttons/btn_2019_kirchturm.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div id="act_5" class="act" style="display:none">
+                    <nav>
+                        <ul id="playlist">
+                            (Die) Heimkehr
+                            <li><a href="commentary/3001.ogg"><img id="3001" src="imgs/buttons/btn_3001_vorgarten.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/3002.ogg"><img id="3002" src="imgs/buttons/btn_3002_veranda.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/3005.ogg"><img id="3005" src="imgs/buttons/btn_3005_hintertuer.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/3003.ogg"><img id="3003"
+                                        src="imgs/buttons/btn_3003_schuppenAussen.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/3004.ogg"><img id="3004"
+                                        src="imgs/buttons/btn_3004_schuppenInnen.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/3006.ogg"><img id="3006" src="imgs/buttons/btn_3006_kellerEdna.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/3007.ogg"><img id="3007" src="imgs/buttons/btn_3007_kuecheEdna.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/3008.ogg"><img id="3008" src="imgs/buttons/btn_3008_treppenhaus.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/3009.ogg"><img id="3009" src="imgs/buttons/btn_3009_esszimmer.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/3010.ogg"><img id="3010"
+                                        src="imgs/buttons/btn_3010_studierzimmer.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/3012.ogg"><img id="3012" src="imgs/buttons/btn_3012_badEdna.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/3011.ogg"><img id="3011" src="imgs/buttons/btn_3011_schulzimmer.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/3013.ogg"><img id="3013" src="imgs/buttons/btn_3013_flurEdna.png"
+                                        class="sceneButton" onClick="reply_click(this.id)"
+                                        onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/7001.ogg"><img id="7001"
+                                        src="imgs/buttons/btn_7001_ednasZimmerErinnerung.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/7009.ogg"><img id="7009"
+                                        src="imgs/buttons/btn_7009_gesimsErinnerung.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/7002.ogg"><img id="7002"
+                                        src="imgs/buttons/btn_7002_flurEdnaErinnerung.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/7004.ogg"><img id="7004"
+                                        src="imgs/buttons/btn_7004_treppenhausErinnerung.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/7003.ogg"><img id="7003"
+                                        src="imgs/buttons/btn_7003_esszimmerErinnerung.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                            <li><a href="commentary/7005.ogg"><img id="7005"
+                                        src="imgs/buttons/btn_7005_kuecheErinnerung.png" class="sceneButton"
+                                        onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </div>
     <script type="text/javascript" src="scripts/audioPlayer.js"></script>
     <script type="text/javascript" src="scripts/pokiGif.js"></script>
     <script type="text/javascript" src="scripts/greyOut.js"></script>
+    <script type="text/javascript" src="scripts/openActs.js"></script>
 </body>
 
 </html>

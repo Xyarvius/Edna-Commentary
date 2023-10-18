@@ -87,7 +87,7 @@ img {
 }
 
 #playlist .current-song a img {
-    background-color: #321c53;
+    background-color: #7F56BB;
     border-radius: 10px;
 }
 
@@ -98,15 +98,15 @@ img {
 nav ul {
     text-align: center;
     margin: auto;
-    max-width: 65%;
+    max-width: 60%;
     max-height: 700px;
     overflow: hidden;
     overflow-y: scroll;
     border-radius: 15px;
     background: #290f332c;
     border: 3px solid #000000;
-    padding-top: 2%;
-    padding-bottom: 1%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
     padding-left: 1%;
     padding-right: 1%;
 }
