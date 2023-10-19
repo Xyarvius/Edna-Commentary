@@ -1,5 +1,4 @@
 var currentSong = 0;
-$("#audioPlayer")[0].play();
 $("#playlist li a").click(function(e){
     e.preventDefault(); 
     $("#audioPlayer")[0].src = this;

@@ -2,6 +2,11 @@ body {
     background: black;
 }
 
+.main {
+    max-height:100vh;
+    overflow-y: auto;
+}
+
 .background-image {
     position: fixed;
     left: 0;
@@ -89,18 +94,21 @@ img {
 #playlist .current-song a img {
     background-color: #7F56BB;
     border-radius: 10px;
+    padding: 3px;
+    margin: -3x;
 }
 
 .sceneButton {
     max-width: 100%;
+    padding: 3px;
 }
 
 nav ul {
     text-align: center;
     margin: auto;
-    max-width: 60%;
-    max-height: 700px;
-    overflow: hidden;
+    max-width: 70%;
+    max-height: 50vh;
+    overflow-x: hidden;
     overflow-y: scroll;
     border-radius: 15px;
     background: #290f332c;
@@ -154,4 +162,16 @@ audio {
     margin-bottom: 10px;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.buttons:hover {
+    filter: brightness(200%);
+  }
+
+.sceneButton:hover {
+    filter: brightness(130%);
+  }
+
+.currentTab {
+    max-height:75px;
 }
