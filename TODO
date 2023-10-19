@@ -1,14 +1,11 @@
-fix overflow for main page
-fix favicon
 test page on different devices
+fix some elements not shrinking (act buttons) and some buttons only shrinking in height (reset button=)
+fix button "Flur zum TV-Raum"
+reorder scene-buttons
 
 maybe:
 add little harvey to currently playing entry
-fade effect when chaning acts
 add buttons (top right) for 
-    reset
-    author (me) + donation?
     sources (youtube videos, map etc.)
-    link to poki/deadalic
-    the one unused commentary
     viewer counter 
+

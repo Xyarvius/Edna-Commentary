@@ -1,16 +1,11 @@
 body {
     background: black;
-}
-
-.main {
-    max-height:100vh;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 .background-image {
     position: fixed;
-    left: 0;
-    z-index: 1;
+    z-index: -1;
     background-image: url("imgs/edna_bg.jpg");
     filter: blur(8px);
     -webkit-filter: blur(8px);
@@ -23,20 +18,31 @@ body {
 }
 
 .content {
-    position: fixed;
-    z-index: 9999;
+    z-index: 1;
     width: 100%;
-    height: auto;
+    height: 100%;
+    overflow-y: auto;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 3fr;
     row-gap: 20px;
     grid-template-areas:
         'left top right'
         'bottom bottom bottom';
+}
+
+.left {
+    text-align: left;
+    grid-area: left;
+}
+
+.poki-container {
+    text-align: center;
+    width: 75%;
+    min-width: 200px;
+    margin-left: 20px;
 }
 
 .top {
@@ -44,19 +50,9 @@ body {
     text-align: center;
 }
 
-.left {
-    text-align: left;
-}
-
-.poki-container {
-    grid-area: left;
-    text-align: center;
-    max-width: 350px;
-    margin-left: 20px;
-}
-
 .right {
     grid-area: right;
+    text-align: right;
 }
 
 .bottom {
@@ -70,7 +66,7 @@ img {
 }
 
 .greyOut {
-    opacity: 0.3;
+    opacity: 0.4;
 }
 
 #title {
@@ -84,23 +80,18 @@ img {
 
 #playlist {
     list-style: none;
-
-}
-
-#playlist li a {
-    object-fit: cover;
 }
 
 #playlist .current-song a img {
     background-color: #7F56BB;
-    border-radius: 10px;
-    padding: 3px;
-    margin: -3x;
+    border-radius: 15px;
+    padding: 4px;
+    margin: -4x;
 }
 
 .sceneButton {
-    max-width: 100%;
-    padding: 3px;
+    width: 80%;
+    padding: 4px;
 }
 
 nav ul {
@@ -117,10 +108,6 @@ nav ul {
     padding-bottom: 1.5%;
     padding-left: 1%;
     padding-right: 1%;
-}
-
-ul {
-    padding-left: 0;
 }
 
 ::-webkit-scrollbar {
@@ -145,33 +132,74 @@ ul {
 
 audio {
     opacity: 60%;
+    width: 100%;
 }
 
-.titles{
-    max-height:200px;
+.titles {
+    max-height: 200px;
     margin-bottom: 15px;
 }
 
-.titles-big{
-    max-height:110px;
+.titles-big {
+    max-height: 110px;
     margin-bottom: 25px;
 }
 
-.buttons{
-    max-height:50px;
+.buttons {
+    height: 50px;
     margin-bottom: 10px;
     margin-left: 5px;
     margin-right: 5px;
+    cursor: pointer;
+}
+
+.currentTab {
+    height: 75px;
+}
+
+.rightBtns {
+    cursor: pointer;
+    margin-right: 30px;
+    margin-top: 15px;
+    height: 70px;
 }
 
 .buttons:hover {
     filter: brightness(200%);
-  }
+}
 
 .sceneButton:hover {
     filter: brightness(130%);
-  }
-
-.currentTab {
-    max-height:75px;
 }
+
+.rightBtns:hover {
+    filter: brightness(120%);
+}
+
+.fadeContainer {
+    -webkit-animation: fadeEffect 0.5s;
+    animation: fadeEffect 0.5s;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+

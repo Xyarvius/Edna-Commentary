@@ -5,40 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edna - Entwicklerkommentare</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon"  href="imgs/favicon.ico">
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <script type="text/javascript" src="scripts/greyOut.js"></script>
     <div class="background-image"></div>
-    <div class="main">
-        <div class="content">
-            <div class="grid-container">
-                <div class="left">
-                    <div class="poki-container">
-                        <div><img id="poki" /></div>
-                        <div><audio src="" controls id="audioPlayer"></audio></div>
-                    </div>
+    <div class="content">
+        <div class="grid-container">
+            <div class="left">
+                <div class="poki-container">
+                    <div><img id="poki" /></div>
+                    <div><audio src="" controls id="audioPlayer"></audio></div>
                 </div>
-                <div class="top">
-                    <img src="imgs/title.png" id="title">
+            </div>
+            <div class="top">
+                <img src="imgs/title.png" id="title">
+            </div>
+            <div class="right">
+                <div><a href="https://www.daedalic.com/" target="_blank"><img class="rightBtns"
+                            src="imgs/copyright.png"></a></div>
+                <div><a href="https://www.twitch.tv/pokinsson" target="_blank"><img class="rightBtns"
+                            src="imgs/creativeChaos.png"></a></div>
+                <div><a href="mailto:xonaxis.studio+edna@googlemail.com"><img class="rightBtns"
+                            src="imgs/feedback.png"></a></div>
+                <div><a id="oops" href="commentary/unused/1010.ogg"><img class="rightBtns" src="imgs/oops.png"></a>
                 </div>
-                <div class="right">
+                <div><img class="rightBtns" src="imgs/reset.png" onClick="resetGrey()"></div>
+            </div>
+            <div class="bottom">
+                <div class="w3-bar w3-black">
+                    <img id="a1" src="imgs/acts/act1_btn.png" onclick="openAct('act_1', this.id)"
+                        class="buttons currentTab">
+                    <img id="a2" src="imgs/acts/act2_btn.png" onclick="openAct('act_2', this.id)" class="buttons">
+                    <img id="a3" src="imgs/acts/act3_btn.png" onclick="openAct('act_3', this.id)" class="buttons">
+                    <img id="a4" src="imgs/acts/act4_btn.png" onclick="openAct('act_4', this.id)" class="buttons">
+                    <img id="a5" src="imgs/acts/act5_btn.png" onclick="openAct('act_5', this.id)" class="buttons ">
                 </div>
-                <div class="bottom">
-                    <div class="w3-bar w3-black">
-                        <img id="a1" src="imgs/acts/act1_btn.png" onclick="openAct('act_1', this.id)"
-                            class="buttons currentTab">
-                        <img id="a2" src="imgs/acts/act2_btn.png" onclick="openAct('act_2', this.id)" class="buttons">
-                        <img id="a3" src="imgs/acts/act3_btn.png" onclick="openAct('act_3', this.id)" class="buttons">
-                        <img id="a4" src="imgs/acts/act4_btn.png" onclick="openAct('act_4', this.id)" class="buttons">
-                        <img id="a5" src="imgs/acts/act5_btn.png" onclick="openAct('act_5', this.id)" class="buttons ">
-                    </div>
 
-                    <div id="act_1" class="act">
-                        <nav>
-                            <ul id="playlist">
+                <div id="act_1" class="act">
+                    <nav>
+                        <ul id="playlist">
+                            <div class="fadeContainer">
                                 <img src="imgs/acts/act1_title.png" class="titles">
                                 <li><a href="commentary/1001.ogg"><img id="1001" src="imgs/buttons/btn_1001_zelle.png"
                                             class="sceneButton" onClick="reply_click(this.id)"
@@ -100,16 +110,22 @@
                                             src="imgs/buttons/btn_1012_dachVorne.png" class="sceneButton"
                                             onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
                                 </li>
-                            </ul>
-                        </nav>
-                    </div>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
 
-                    <div id="act_2" class="act" style="display:none">
-                        <nav>
-                            <ul id="playlist">
+                <div id="act_2" class="act" style="display:none">
+                    <nav>
+                        <ul id="playlist">
+                            <div class="fadeContainer">
                                 <img src="imgs/acts/act2_title.png" class="titles">
                                 <li><a href="commentary/1013.ogg"><img id="1013"
                                             src="imgs/buttons/btn_1013_flurUeberwachung.png" class="sceneButton"
+                                            onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                                </li>
+                                <li><a href="commentary/1017.ogg"><img id="1017"
+                                            src="imgs/buttons/btn_1017_ueberwachungsraum.png" class="sceneButton"
                                             onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
                                 </li>
                                 <li><a href="commentary/1014.ogg"><img id="1014" src="imgs/buttons/btn_1014_flurWC.png"
@@ -123,10 +139,6 @@
                                 <li><a href="commentary/1016.ogg"><img id="1016" src="imgs/buttons/btn_1016_wc1.png"
                                             class="sceneButton" onClick="reply_click(this.id)"
                                             onload="load_grey(this.id)"></a>
-                                </li>
-                                <li><a href="commentary/1017.ogg"><img id="1017"
-                                            src="imgs/buttons/btn_1017_ueberwachungsraum.png" class="sceneButton"
-                                            onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
                                 </li>
                                 <li><a href="commentary/1018.ogg"><img id="1018"
                                             src="imgs/buttons/btn_1018_flurGross.png" class="sceneButton"
@@ -144,6 +156,43 @@
                                             class="sceneButton" onClick="reply_click(this.id)"
                                             onload="load_grey(this.id)"></a>
                                 </li>
+                                <li><a href="commentary/1040.ogg"><img id="1040"
+                                            src="imgs/buttons/btn_1040_speisesaal.png" class="sceneButton"
+                                            onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                                </li>
+                                <li><a href="commentary/1043.ogg"><img id="1043"
+                                            src="imgs/buttons/btn_1043_flurGruppentherapie.png" class="sceneButton"
+                                            onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                                </li>
+                                <li><a href="commentary/1044.ogg"><img id="1044"
+                                            src="imgs/buttons/btn_1044_gruppentherapie.png" class="sceneButton"
+                                            onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                                </li>
+                                <li><a href="commentary/1041.ogg"><img id="1041" src="imgs/buttons/btn_1041_kueche.png"
+                                            class="sceneButton" onClick="reply_click(this.id)"
+                                            onload="load_grey(this.id)"></a>
+                                </li>
+                                <li><a href="commentary/1042.ogg"><img id="1042"
+                                            src="imgs/buttons/btn_1042_flurKeller.png" class="sceneButton"
+                                            onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                                </li>
+                                <li><a href="commentary/1045.ogg"><img id="1045"
+                                            src="imgs/buttons/btn_1045_kellergang.png" class="sceneButton"
+                                            onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                                </li>
+
+                                <li><a href="commentary/1047.ogg"><img id="1047"
+                                            src="imgs/buttons/btn_1047_heizraumOben.png" class="sceneButton"
+                                            onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                                </li>
+                                <li><a href="commentary/1048.ogg"><img id="1048"
+                                            src="imgs/buttons/btn_1048_heizraumUnten.png" class="sceneButton"
+                                            onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                                </li>
+                                <li><a href="commentary/1049.ogg"><img id="1049" src="imgs/buttons/btn_1049_archiv.png"
+                                            class="sceneButton" onClick="reply_click(this.id)"
+                                            onload="load_grey(this.id)"></a>
+                                </li>
                                 <li><a href="commentary/1039.ogg"><img id="1039"
                                             src="imgs/buttons/btn_1039_besuchereingang.png" class="sceneButton"
                                             onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
@@ -152,14 +201,15 @@
                                             src="imgs/buttons/btn_1028_aufenthaltsraum.png" class="sceneButton"
                                             onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
                                 </li>
-                                <li><a href="commentary/1037.ogg"><img id="1037"
-                                            src="imgs/buttons/btn_1037_residenz.png" class="sceneButton"
-                                            onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
-                                </li>
                                 <li><a href="commentary/1030.ogg"><img id="1030" src="imgs/buttons/btn_1030_telefon.png"
                                             class="sceneButton" onClick="reply_click(this.id)"
                                             onload="load_grey(this.id)"></a>
                                 </li>
+                                <li><a href="commentary/1037.ogg"><img id="1037"
+                                            src="imgs/buttons/btn_1037_residenz.png" class="sceneButton"
+                                            onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                                </li>
+
                                 <li><a href="commentary/1029.ogg"><img id="1029"
                                             src="imgs/buttons/btn_1029_fernsehzimmer.png" class="sceneButton"
                                             onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
@@ -220,42 +270,6 @@
                                             src="imgs/buttons/btn_1046_waschraum.png" class="sceneButton"
                                             onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
                                 </li>
-                                <li><a href="commentary/1045.ogg"><img id="1045"
-                                            src="imgs/buttons/btn_1045_kellergang.png" class="sceneButton"
-                                            onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
-                                </li>
-                                <li><a href="commentary/1049.ogg"><img id="1049" src="imgs/buttons/btn_1049_archiv.png"
-                                            class="sceneButton" onClick="reply_click(this.id)"
-                                            onload="load_grey(this.id)"></a>
-                                </li>
-                                <li><a href="commentary/1047.ogg"><img id="1047"
-                                            src="imgs/buttons/btn_1047_heizraumOben.png" class="sceneButton"
-                                            onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
-                                </li>
-                                <li><a href="commentary/1048.ogg"><img id="1048"
-                                            src="imgs/buttons/btn_1048_heizraumUnten.png" class="sceneButton"
-                                            onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
-                                </li>
-                                <li><a href="commentary/1042.ogg"><img id="1042"
-                                            src="imgs/buttons/btn_1042_flurKeller.png" class="sceneButton"
-                                            onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
-                                </li>
-                                <li><a href="commentary/1041.ogg"><img id="1041" src="imgs/buttons/btn_1041_kueche.png"
-                                            class="sceneButton" onClick="reply_click(this.id)"
-                                            onload="load_grey(this.id)"></a>
-                                </li>
-                                <li><a href="commentary/1040.ogg"><img id="1040"
-                                            src="imgs/buttons/btn_1040_speisesaal.png" class="sceneButton"
-                                            onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
-                                </li>
-                                <li><a href="commentary/1043.ogg"><img id="1043"
-                                            src="imgs/buttons/btn_1043_flurGruppentherapie.png" class="sceneButton"
-                                            onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
-                                </li>
-                                <li><a href="commentary/1044.ogg"><img id="1044"
-                                            src="imgs/buttons/btn_1044_gruppentherapie.png" class="sceneButton"
-                                            onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
-                                </li>
                                 <li><a href="commentary/1019.ogg"><img id="1019" src="imgs/buttons/btn_1019_schrein.png"
                                             class="sceneButton" onClick="reply_click(this.id)"
                                             onload="load_grey(this.id)"></a>
@@ -268,13 +282,15 @@
                                             src="imgs/buttons/btn_5003_kleiderschrankErinnerung.png" class="sceneButton"
                                             onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
                                 </li>
-                            </ul>
-                        </nav>
-                    </div>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
 
-                    <div id="act_3" class="act" style="display:none">
-                        <nav>
-                            <ul id="playlist">
+                <div id="act_3" class="act" style="display:none">
+                    <nav>
+                        <ul id="playlist">
+                            <div class="fadeContainer">
                                 <img src="imgs/acts/act3_title.png" class="titles">
                                 <li><a href="commentary/1051.ogg"><img id="1051"
                                             src="imgs/buttons/btn_1051_hinterhof.png" class="sceneButton"
@@ -304,10 +320,6 @@
                                             class="sceneButton" onClick="reply_click(this.id)"
                                             onload="load_grey(this.id)"></a>
                                 </li>
-                                <li><a href="commentary/1061.ogg"><img id="1061"
-                                            src="imgs/buttons/btn_1061_esstisch.png" class="sceneButton"
-                                            onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
-                                </li>
                                 <li><a href="commentary/1058.ogg"><img id="1058"
                                             src="imgs/buttons/btn_1058_wachturmUnten.png" class="sceneButton"
                                             onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
@@ -316,19 +328,29 @@
                                             src="imgs/buttons/btn_1062_wachturmOben.png" class="sceneButton"
                                             onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
                                 </li>
-                            </ul>
-                        </nav>
-                    </div>
+                                <li><a href="commentary/1061.ogg"><img id="1061"
+                                            src="imgs/buttons/btn_1061_esstisch.png" class="sceneButton"
+                                            onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
+                                </li>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
 
-                    <div id="act_4" class="act" style="display:none">
-                        <nav>
-                            <ul id="playlist">
+                <div id="act_4" class="act" style="display:none">
+                    <nav>
+                        <ul id="playlist">
+                            <div class="fadeContainer">
                                 <img src="imgs/acts/act4_title.png" class="titles-big">
                                 <li><a href="commentary/2001.ogg"><img id="2001"
                                             src="imgs/buttons/btn_2001_unfallstelle.png" class="sceneButton"
                                             onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
                                 </li>
                                 <li><a href="commentary/2002.ogg"><img id="2002" src="imgs/buttons/btn_2002_auto.png"
+                                            class="sceneButton" onClick="reply_click(this.id)"
+                                            onload="load_grey(this.id)"></a>
+                                </li>
+                                <li><a href="commentary/2009.ogg"><img id="2009" src="imgs/buttons/btn_2009_fluss.png"
                                             class="sceneButton" onClick="reply_click(this.id)"
                                             onload="load_grey(this.id)"></a>
                                 </li>
@@ -339,10 +361,6 @@
                                 <li><a href="commentary/2004.ogg"><img id="2004"
                                             src="imgs/buttons/btn_2004_aussichtsplattform.png" class="sceneButton"
                                             onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
-                                </li>
-                                <li><a href="commentary/2009.ogg"><img id="2009" src="imgs/buttons/btn_2009_fluss.png"
-                                            class="sceneButton" onClick="reply_click(this.id)"
-                                            onload="load_grey(this.id)"></a>
                                 </li>
                                 <li><a href="commentary/2005.ogg"><img id="2005"
                                             src="imgs/buttons/btn_2005_strasseKirche.png" class="sceneButton"
@@ -396,13 +414,15 @@
                                             src="imgs/buttons/btn_2019_kirchturm.png" class="sceneButton"
                                             onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
                                 </li>
-                            </ul>
-                        </nav>
-                    </div>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
 
-                    <div id="act_5" class="act" style="display:none">
-                        <nav>
-                            <ul id="playlist">
+                <div id="act_5" class="act" style="display:none">
+                    <nav>
+                        <ul id="playlist">
+                            <div class="fadeContainer">
                                 <img src="imgs/acts/act5_title.png" class="titles-big">
                                 <li><a href="commentary/3001.ogg"><img id="3001"
                                             src="imgs/buttons/btn_3001_vorgarten.png" class="sceneButton"
@@ -480,16 +500,16 @@
                                             src="imgs/buttons/btn_7005_kuecheErinnerung.png" class="sceneButton"
                                             onClick="reply_click(this.id)" onload="load_grey(this.id)"></a>
                                 </li>
-                            </ul>
-                        </nav>
-                    </div>
+                            </div>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="scripts/audioPlayer.js"></script>
-        <script type="text/javascript" src="scripts/pokiGif.js"></script>
-        <script type="text/javascript" src="scripts/openActs.js"></script>
     </div>
+    <script type="text/javascript" src="scripts/audioPlayer.js"></script>
+    <script type="text/javascript" src="scripts/pokiGif.js"></script>
+    <script type="text/javascript" src="scripts/openActs.js"></script>
 </body>
 
 </html>
