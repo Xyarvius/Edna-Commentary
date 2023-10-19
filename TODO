@@ -1,8 +1,16 @@
 fix overflow for main page
 fix favicon
-make act buttons nicer
-make headlines for acts nicer
+test page on different devices
 
 maybe:
 add little harvey to currently playing entry
-add button for reset, author, link to poki/deadalic etc. (top right)
+mark current act (button)
+fade effect when chaning acts
+button hover effect
+add buttons (top right) for 
+    reset
+    author (me) + donation?
+    sources (youtube videos, map etc.)
+    link to poki/deadalic
+    the one unused commentary
+    viewer counter 

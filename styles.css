@@ -138,3 +138,20 @@ ul {
 audio {
     opacity: 60%;
 }
+
+.titles{
+    max-height:200px;
+    margin-bottom: 15px;
+}
+
+.titles-big{
+    max-height:110px;
+    margin-bottom: 25px;
+}
+
+.buttons{
+    max-height:50px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
