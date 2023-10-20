@@ -13,5 +13,5 @@ function resetGrey() {
     if (confirm(unescape("Willst du deinen aktuellen Stand wirklich zur%FCcksetzen%3F"))) {
         localStorage.clear();
         window.location.reload();
-      } else {}
+    } else { }
 }

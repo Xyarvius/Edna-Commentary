@@ -158,10 +158,14 @@ audio {
 }
 
 .rightBtns {
+    display: block;
     cursor: pointer;
-    margin-right: 30px;
+    margin-right: 10px;
     margin-top: 15px;
-    height: 70px;
+    max-width: 70px;
+    max-height: 70px;
+    height: auto;
+    width: auto;
 }
 
 .buttons:hover {
@@ -204,11 +208,11 @@ audio {
 div.tooltip-container {
     position: relative;
     display: inline-block;
-  }
+}
 
 div.tooltip-container span {
     font-size: larger;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     visibility: hidden;
     width: 120px;
     background-color: #5d3e88;
@@ -220,10 +224,8 @@ div.tooltip-container span {
     z-index: 1;
     top: 32px;
     right: 105%;
-  }
-  
-  div.tooltip-container:hover span  {
+}
+
+div.tooltip-container:hover span {
     visibility: visible;
-  }
-
-
+}

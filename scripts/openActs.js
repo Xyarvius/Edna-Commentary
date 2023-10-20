@@ -5,7 +5,7 @@ function openAct(actName, clicked_id) {
         x[i].style.display = "none";
     }
     document.getElementById(actName).style.display = "block";
-    
+
     $(".buttons.currentTab").removeClass("currentTab");
     $('#' + clicked_id).addClass('currentTab');
 }
