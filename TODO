@@ -1,11 +1,9 @@
-test page on different devices
-fix some elements not shrinking (act buttons) and some buttons only shrinking in height (reset button=)
-fix button "Flur zum TV-Raum"
-reorder scene-buttons
+mandatory:
+all done
 
 maybe:
+a help button with all the info
+test page on different devices
+fix some elements not shrinking (act buttons) and some buttons only shrinking in height (reset button)
 add little harvey to currently playing entry
-add buttons (top right) for 
-    sources (youtube videos, map etc.)
-    viewer counter 
-
+traffic / visitor count
